@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCCA09821BC2E82700CC3FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA09811BC2E82700CC3FDD /* AppDelegate.swift */; };
+		BCCA09841BC2E82700CC3FDD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA09831BC2E82700CC3FDD /* FirstViewController.swift */; };
+		BCCA09861BC2E82700CC3FDD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA09851BC2E82700CC3FDD /* SecondViewController.swift */; };
+		BCCA09891BC2E82700CC3FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCA09871BC2E82700CC3FDD /* Main.storyboard */; };
+		BCCA098B1BC2E82700CC3FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCA098A1BC2E82700CC3FDD /* Assets.xcassets */; };
+		BCCA098E1BC2E82700CC3FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCA098C1BC2E82700CC3FDD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCCA097E1BC2E82700CC3FDD /* Nomad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nomad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCA09811BC2E82700CC3FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCCA09831BC2E82700CC3FDD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BCCA09851BC2E82700CC3FDD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BCCA09881BC2E82700CC3FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCCA098A1BC2E82700CC3FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCCA098D1BC2E82700CC3FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCCA098F1BC2E82700CC3FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCCA097B1BC2E82700CC3FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCCA09751BC2E82700CC3FDD = {
+			isa = PBXGroup;
+			children = (
+				BCCA09801BC2E82700CC3FDD /* Nomad */,
+				BCCA097F1BC2E82700CC3FDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCCA097F1BC2E82700CC3FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCCA097E1BC2E82700CC3FDD /* Nomad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCCA09801BC2E82700CC3FDD /* Nomad */ = {
+			isa = PBXGroup;
+			children = (
+				BCCA09811BC2E82700CC3FDD /* AppDelegate.swift */,
+				BCCA09831BC2E82700CC3FDD /* FirstViewController.swift */,
+				BCCA09851BC2E82700CC3FDD /* SecondViewController.swift */,
+				BCCA09871BC2E82700CC3FDD /* Main.storyboard */,
+				BCCA098A1BC2E82700CC3FDD /* Assets.xcassets */,
+				BCCA098C1BC2E82700CC3FDD /* LaunchScreen.storyboard */,
+				BCCA098F1BC2E82700CC3FDD /* Info.plist */,
+			);
+			path = Nomad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCCA097D1BC2E82700CC3FDD /* Nomad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCA09921BC2E82700CC3FDD /* Build configuration list for PBXNativeTarget "Nomad" */;
+			buildPhases = (
+				BCCA097A1BC2E82700CC3FDD /* Sources */,
+				BCCA097B1BC2E82700CC3FDD /* Frameworks */,
+				BCCA097C1BC2E82700CC3FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nomad;
+			productName = Nomad;
+			productReference = BCCA097E1BC2E82700CC3FDD /* Nomad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCCA09761BC2E82700CC3FDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Tether;
+				TargetAttributes = {
+					BCCA097D1BC2E82700CC3FDD = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BCCA09791BC2E82700CC3FDD /* Build configuration list for PBXProject "Nomad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCCA09751BC2E82700CC3FDD;
+			productRefGroup = BCCA097F1BC2E82700CC3FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCCA097D1BC2E82700CC3FDD /* Nomad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCCA097C1BC2E82700CC3FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCA098E1BC2E82700CC3FDD /* LaunchScreen.storyboard in Resources */,
+				BCCA098B1BC2E82700CC3FDD /* Assets.xcassets in Resources */,
+				BCCA09891BC2E82700CC3FDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCCA097A1BC2E82700CC3FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCA09861BC2E82700CC3FDD /* SecondViewController.swift in Sources */,
+				BCCA09821BC2E82700CC3FDD /* AppDelegate.swift in Sources */,
+				BCCA09841BC2E82700CC3FDD /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCCA09871BC2E82700CC3FDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCCA09881BC2E82700CC3FDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCCA098C1BC2E82700CC3FDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCCA098D1BC2E82700CC3FDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCCA09901BC2E82700CC3FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCCA09911BC2E82700CC3FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCCA09931BC2E82700CC3FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nomad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tether.Nomad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCCA09941BC2E82700CC3FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nomad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tether.Nomad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCCA09791BC2E82700CC3FDD /* Build configuration list for PBXProject "Nomad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCA09901BC2E82700CC3FDD /* Debug */,
+				BCCA09911BC2E82700CC3FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCA09921BC2E82700CC3FDD /* Build configuration list for PBXNativeTarget "Nomad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCA09931BC2E82700CC3FDD /* Debug */,
+				BCCA09941BC2E82700CC3FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCCA09761BC2E82700CC3FDD /* Project object */;
+}
