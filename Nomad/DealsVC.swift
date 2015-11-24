@@ -35,6 +35,8 @@ class DealsVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSourc
   override func viewDidLoad() {
     super.viewDidLoad()
     findMyLocation()
+    
+    //*********** Take this out once the API Pulls live data ****************
     deal1.locationName = "Founders"
     deal1.avatarImage = UIImage(named: "tjProfPic")
     deal1.message = "10% of all nitro beers today!"
@@ -64,6 +66,7 @@ class DealsVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSourc
     self.items.addObject(deal2)
     self.items.addObject(deal3)
     self.items.addObject(deal4)
+    // ************************************************************************
 
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "removeLoader", name: "removeLoader", object: nil)
     navigationController?.navigationBar.barTintColor = UIColor(red: (179.0/255.0), green: (106/255.0), blue: (219/255.0), alpha: 1);
@@ -77,10 +80,12 @@ class DealsVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSourc
     locationLabel.textColor = UIColor.whiteColor()
     locationLabel.textAlignment = NSTextAlignment.Center
     locationLabel.backgroundColor = UIColor(red: (40.0/255.0), green: (48/255.0), blue: (57/255.0), alpha: 1)
-    self.view.addSubview(locationLabel)
+    //self.view.addSubview(locationLabel)
     
     //tableview
-    let frame:CGRect = CGRect(x: 10, y: 114, width: self.view.frame.width - 20, height: self.view.frame.height-160)
+    //let frame:CGRect = CGRect(x: 10, y: 114, width: self.view.frame.width - 20, height: self.view.frame.height-160)
+    let frame:CGRect = CGRect(x: 10, y: 64, width: self.view.frame.width - 20, height: self.view.frame.height-80)
+
     self.tableView = UITableView(frame: frame)
     self.tableView?.dataSource = self
     self.tableView?.delegate = self
@@ -224,13 +229,6 @@ class DealsVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSourc
   
   
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
- /*   var cell: DealsNearMeCell = tableView.cellForRowAtIndexPath(indexPath) as! DealsNearMeCell
-    var theLocation: Location = items[indexPath.row] as! Location
-    var imageString = theLocation.avatarUrl
-    var locationNameString = theLocation.name//items[indexPath.row]//fakePlaces[indexPath.row]
-    var locationId = theLocation.locationId
-    showBarDetail(imageString!, locationName: locationNameString!, avatarImage: theLocation.avatarImage!, locationAddress: theLocation.address!, locationId: theLocation.locationId!)
-*/
     
   }
   

@@ -71,6 +71,7 @@
 		BCF446AB1BC4533D00528B66 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCF446A71BC4533D00528B66 /* DigitsKitResources.bundle */; };
 		BCF446AC1BC4533D00528B66 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF446A81BC4533D00528B66 /* TwitterCore.framework */; };
 		BCF446AE1BC453FE00528B66 /* SignUpLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF446AD1BC453FE00528B66 /* SignUpLogIn.swift */; };
+		BCF837931C050C6F00A82A14 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF837921C050C6F00A82A14 /* PaymentVC.swift */; };
 		BCF96FDC1BCEB0300082E28C /* Consumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF96FDB1BCEB0300082E28C /* Consumer.swift */; };
 		BCF96FDE1BCEC3AF0082E28C /* TabService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF96FDD1BCEC3AF0082E28C /* TabService.swift */; };
 		BCF96FE21BCEC4B70082E28C /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF96FE11BCEC4B70082E28C /* ServerResponse.swift */; };
@@ -149,6 +150,7 @@
 		BCF446A71BC4533D00528B66 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		BCF446A81BC4533D00528B66 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		BCF446AD1BC453FE00528B66 /* SignUpLogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpLogIn.swift; sourceTree = "<group>"; };
+		BCF837921C050C6F00A82A14 /* PaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		BCF96FDB1BCEB0300082E28C /* Consumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consumer.swift; sourceTree = "<group>"; };
 		BCF96FDD1BCEC3AF0082E28C /* TabService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabService.swift; sourceTree = "<group>"; };
 		BCF96FE11BCEC4B70082E28C /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				BC2B00871BC5D93E00266DBC /* LocationDetailVC.swift */,
 				BC02990E1BC855F700DFBC30 /* BarDetailVC.swift */,
 				BC84E3131BCC7275009E56E0 /* OldTabVC.swift */,
+				BCF837921C050C6F00A82A14 /* PaymentVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				BC84E3061BCC291A009E56E0 /* ProfileTabPopover.swift in Sources */,
 				BC50B3BB1BCD6E470069405C /* KeychainService.swift in Sources */,
 				BC82F2B81BC5B084006FA988 /* PlacesNearMeCell.swift in Sources */,
+				BCF837931C050C6F00A82A14 /* PaymentVC.swift in Sources */,
 				BC50B3C41BCD8A400069405C /* SignUpResult.swift in Sources */,
 				BC50B3BD1BCD6E890069405C /* SwiftyJSON.swift in Sources */,
 				BCF96FEC1BCEFBBA0082E28C /* ReceiptService.swift in Sources */,

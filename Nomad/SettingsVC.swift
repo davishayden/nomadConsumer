@@ -145,6 +145,7 @@ class SettingsVC: UIViewController, UIPopoverPresentationControllerDelegate, UIT
     fullNameField.placeholder = "Enter your name"
     profileTabView.addSubview(fullNameField)
     
+    /*
     phoneNumberLabel.text = "Phone Number"
     phoneNumberLabel.textColor = UIColor.whiteColor()
     phoneNumberLabel.font = UIFont(name: "JosefinSans-SemiBold", size: 16);
@@ -155,29 +156,31 @@ class SettingsVC: UIViewController, UIPopoverPresentationControllerDelegate, UIT
     phoneNumberField.placeholder = "xxx-xxx-xxxx"
     phoneNumberField.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.16, profileTabView.frame.width * 0.45, 25)
     profileTabView.addSubview(phoneNumberField)
+    */
     
     emailLabel.text = "Email"
     emailLabel.textColor = UIColor.whiteColor()
     emailLabel.font = UIFont(name: "JosefinSans-SemiBold", size: 16);
-    emailLabel.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.22, profileTabView.frame.width * 0.45, 20)
+    emailLabel.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.115, profileTabView.frame.width * 0.45, 20) //CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.22, profileTabView.frame.width * 0.45, 20)
     profileTabView.addSubview(emailLabel)
     
     emailField.backgroundColor = UIColor.whiteColor()
     emailField.placeholder = "example@mail.com"
-    emailField.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.265, profileTabView.frame.width * 0.45, 25)
+    emailField.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.16, profileTabView.frame.width * 0.45, 25) //CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.265, profileTabView.frame.width * 0.45, 25)
     profileTabView.addSubview(emailField)
     
     defaultTipLabel.text = "Default Tip %"
     defaultTipLabel.textColor = UIColor.whiteColor()
     defaultTipLabel.font = UIFont(name: "JosefinSans-SemiBold", size: 16);
-    defaultTipLabel.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.325, profileTabView.frame.width * 0.45, 20)
+    defaultTipLabel.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.22, profileTabView.frame.width * 0.45, 20)
+//CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.325, profileTabView.frame.width * 0.45, 20)
     profileTabView.addSubview(defaultTipLabel)
     
     defaultTipField.backgroundColor = UIColor.whiteColor()
     defaultTipField.placeholder = "Enter in % of total bill"
-    defaultTipField.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.37, profileTabView.frame.width * 0.45, 25)
+    defaultTipField.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.265, profileTabView.frame.width * 0.45, 25)
+//CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.37, profileTabView.frame.width * 0.45, 25)
     profileTabView.addSubview(defaultTipField)
-    
     
     localDealLabel.text = "Nearby Deal Notifications?"
     localDealLabel.textColor = UIColor.whiteColor()
@@ -196,12 +199,14 @@ class SettingsVC: UIViewController, UIPopoverPresentationControllerDelegate, UIT
     changePhotoButton.backgroundColor =  UIColor(red: (179.0/255.0), green: (106/255.0), blue: (219/255.0), alpha: 1);
     profileTabView.addSubview(changePhotoButton)
     
-    changePaymentButton.frame = CGRectMake(profileTabView.frame.width * 0.52, profileTabView.frame.height * 0.370, profileTabView.frame.width * 0.45, 25)
+    //changePaymentButton.frame = CGRectMake(profileTabView.frame.width * 0.52, profileTabView.frame.height * 0.370, profileTabView.frame.width * 0.45, 25)
+    changePaymentButton.frame = CGRectMake(profileTabView.frame.width * 0.05, profileTabView.frame.height * 0.370, profileTabView.frame.width * 0.90, 25)
     changePaymentButton.setTitle("Change Payment", forState: UIControlState.Normal)
     changePaymentButton.titleLabel?.font = UIFont(name: "JosefinSans-SemiBold", size: 16);
     changePaymentButton.clipsToBounds = true
     changePaymentButton.layer.cornerRadius = 10.0
     changePaymentButton.backgroundColor =  UIColor(red: (179.0/255.0), green: (106/255.0), blue: (219/255.0), alpha: 1);
+    changePaymentButton.addTarget(self, action: "openPaymentOptionVC", forControlEvents: UIControlEvents.TouchUpInside)
     profileTabView.addSubview(changePaymentButton)
     
     updateProfileButton.frame = CGRectMake(self.view.frame.width * (2/3), -20, self.view.frame.width / 4, 40)
@@ -224,6 +229,11 @@ class SettingsVC: UIViewController, UIPopoverPresentationControllerDelegate, UIT
     touched.enabled = false
 
   
+  }
+  
+  func openPaymentOptionVC() {
+    let paymentVC = PaymentVC()
+    self.presentViewController(paymentVC, animated: true, completion: nil)
   }
   
   func receiptsRetreived(theReceipts:  [Receipt] ){

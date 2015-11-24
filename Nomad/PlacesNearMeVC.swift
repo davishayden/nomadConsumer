@@ -16,8 +16,6 @@ class PlacesNearMeVC: UIViewController, CLLocationManagerDelegate, UITableViewDa
   let locationService = LocaitonService()
   var tabService: TabService = TabService()
   var loader = UIActivityIndicatorView()
-
-
   var items = NSMutableArray()
 
   
@@ -26,6 +24,7 @@ class PlacesNearMeVC: UIViewController, CLLocationManagerDelegate, UITableViewDa
   var viewCurrentTab: UIBarButtonItem?
   
   ///////
+  var refreshControl = UIRefreshControl()
 
   
   override func viewDidLoad() {
@@ -93,6 +92,29 @@ class PlacesNearMeVC: UIViewController, CLLocationManagerDelegate, UITableViewDa
           print(error);
       });
     }
+    
+    
+    refreshControl.addTarget(self, action: "pulledRefresh", forControlEvents: UIControlEvents.ValueChanged)
+    self.refreshControl.attributedTitle = NSAttributedString(string: "Finding more places...", attributes: [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "JosefinSans-SemiBold",  size: 20)!])
+    let tableViewController = UITableViewController()
+    tableViewController.tableView = self.tableView
+    tableViewController.refreshControl = self.refreshControl
+  }
+  
+  func pulledRefresh() {
+    print("Pulled Refresh")
+    self.locationService.getLocations(currentLat, myLong: currentLong, completionHandler: self.locationsRetrieved, errorHandler: {(error) in
+      print(error);
+    })
+    if(currentLong != 0.0 && currentLong != 0.0) {
+      self.locationService.check300(String(currentLat), long: String(currentLong), authToken: Keychain.get("nomadAuthToken") as! String, completionHandler: { json in
+        print("success")
+        }, errorHandler: { error in
+          // handle the error
+          print(error);
+      });
+    }
+    self.refreshControl.endRefreshing()
 
   }
   
